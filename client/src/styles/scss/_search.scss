@@ -1,0 +1,33 @@
+.result-search{
+    position: absolute;
+    margin-top: 4rem;
+    height: 50vh;
+    background-color: rgb(237 237 237);
+    overflow-y: scroll;
+    max-width: 315px;
+    width: 100%;
+    right: 0;
+    border-radius: 15px;
+
+    
+    ul{
+        li{
+            list-style: none;
+            cursor: pointer;
+           
+        }
+
+        .link-toPatient{
+            padding: 1rem;
+        }
+
+        .link-toPatient:hover{
+            background-color: #ffa200;
+            color: white;
+           
+        }
+       
+    }
+}
+
+//

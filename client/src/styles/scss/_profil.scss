@@ -1,0 +1,304 @@
+body {
+  // background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.menuFichePatient {
+  overflow-x: auto;
+
+  .btn-menuFichePatient {
+    cursor: pointer;
+    min-width: 80px;
+    min-width: min-content;
+    text-align: center;
+    padding: 0.5rem;
+
+    @media screen and (min-width: 768px) {
+      padding: 0.5rem 1rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+      padding: 0.5rem 2rem;
+    }
+  }
+}
+
+.menu-ongletFiche {
+  margin-bottom: 2rem;
+
+  button {
+    display: block;
+    font-size: 1.1rem;
+  }
+}
+
+.emp-profile {
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.profile-img {
+  text-align: left;
+}
+
+.profile-img img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-img .file {
+  position: absolute;
+  overflow: hidden;
+  /* margin-top: -20%; */
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: rgba(33, 37, 41, 0.7215686275);
+  bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+.item-goals {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: 0.8rem;
+}
+
+h5 {
+  color: #333;
+}
+
+.profile-edit-btn {
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.proile-rating {
+  font-size: 12px;
+  color: #818182;
+  margin-top: 5%;
+}
+
+.proile-rating span {
+  color: #495057;
+  font-size: 15px;
+}
+
+.nav-tabs {
+  margin-bottom: 5% !important;
+}
+
+.nav-tabs .nav-link {
+  font-weight: 600 !important;
+  border: none !important;
+}
+
+.nav-tabs .nav-link.active {
+  border: none !important;
+  border-bottom: 2px solid #ffa200 !important;
+}
+
+.profile-work {
+  padding: 14%;
+  margin-top: -15%;
+}
+
+.profile-work p {
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+}
+
+.profile-work a {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-work ul {
+  list-style: none;
+}
+
+.profile-tab label {
+  font-weight: 600 !important;
+}
+
+.profile-tab p {
+  font-weight: 600 !important;
+  color: #ffa200 !important;
+}
+
+.profile-head {
+  margin-bottom: 3rem;
+
+  .profile-head-title {
+    display: flex;
+
+    button {
+      margin-left: 0.5rem;
+    }
+  }
+}
+.head-profile{
+  margin-top: 4rem;
+}
+
+.body-profile{
+  .btn-menuFichePatient{
+    color: #6c757d !important;
+  }
+}
+
+.profile-tab {
+  margin-bottom: 3rem;
+
+  li {
+    button {
+      color: #6c757d !important;
+      background-color: transparent;
+      border-color: 0 solid #ffa200;
+    }
+  }
+}
+
+// .accordion-button:not(.collapsed) {
+//     color: #ffffff!important;
+//     background-color: #ffffff!important;
+//     box-shadow: none;
+//     border: 1px solid red;
+// }
+
+.row-children {
+  padding: 1rem 0 1rem 0;
+  // background-color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dbd7d7;
+}
+
+.accordion-fiche {
+  button {
+    // background-color: white!important;
+    border: 0 !important;
+  }
+
+  button:hover {
+    color: #91bd10 !important;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  h6 {
+    display: flex !important;
+    color: #515250 !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+
+  }
+}
+
+
+.row-infos {
+  border-bottom: 0.5px solid #d9d9d9;
+  padding: 2rem 0 2rem 0;
+}
+
+.container-ongletProfile {
+  .suivi-action-buttons {
+    flex-wrap: wrap;
+
+    button {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .suivi-card {
+    border: solid 2px #f8f8f8;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    transition: box-shadow .1s ease-in-out;
+    position: relative;
+
+    &:hover {
+      box-shadow: 0 14px 25px rgb(0 0 0 / 16%);
+    }
+
+    .suivi-card-title {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 0;
+      padding: 12px 20px;
+      background: #666;
+      color: white;
+    }
+
+    .noEditRepports-container {
+      padding: 20px;
+
+      .data-row {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+
+        &:not(:last-of-type) {
+          border-bottom: solid 1px #eee;
+        }
+
+        h6 {
+          margin: 0;
+          min-width: 160px;
+        }
+      }
+    }
+
+    .report-content {
+      padding: 20px;
+    }
+  }
+
+  .report-content {
+    // padding: 3rem;
+    // box-shadow: rgb(17 17 26 / 6%) 0px 0px 16px;
+    // /* border: 1px solid #d1d5db; */
+    // border-radius: 22px;
+    // margin-bottom: 3rem;
+    // position: relative;
+
+
+    h6 {
+      // color: rgb(39, 39, 39);
+      // position: absolute;
+      // right: 43px;
+    }
+
+  }
+
+}
+
+//

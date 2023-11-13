@@ -1,0 +1,35 @@
+.main-home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  .container-home {
+    p {
+      margin: 0rem;
+    }
+
+    label {
+      text-align: left;
+      float: left;
+      color: #545454;
+    }
+
+    .text-align-left {
+      text-align: left;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      color: rgb(21, 21, 21);
+      font-size: 1.2rem;
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

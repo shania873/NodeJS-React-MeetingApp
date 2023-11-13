@@ -1,0 +1,73 @@
+.menu-metis {
+  z-index: 11;
+
+  .navbar-nav {
+  
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      // align-items: center;
+    }
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.collapse.show {
+
+
+    display: block;
+
+  }
+
+  .addPatients-btn {
+    background-color: transparent;
+    color: white;
+    margin-right: 0.5rem;
+    span{
+      margin-left: 0.5rem;
+    }
+  }
+
+  .dropdown {
+    // display: flex;
+    margin: 0.5rem 0;
+
+    @media screen and (min-width: 1400px) {
+      margin: 0.5rem;
+    }
+
+    color: white;
+
+    button {
+      color: white;
+    }
+  }
+
+  .uk-input {
+    max-width: 186px;
+  }
+
+  .select-menu {
+    max-width: 186px;
+    margin: 0.5rem 0.5rem;
+
+    @media screen and (min-width: 1400px) {
+      margin: 0 0.5rem;
+    }
+  }
+
+  .nav-link {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

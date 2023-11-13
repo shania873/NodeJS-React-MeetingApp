@@ -1,0 +1,25 @@
+.onglet-contact {}
+
+
+.tags-contacts {
+  border: solid 1px #ddd;
+  font-size: 0.75rem;
+  padding: 2px 4px;
+  margin: 2px;
+  // white-space: nowrap;
+  display: inline-block;
+  background: white;
+  // cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+}
+
+.item-phone{
+  font-size: 0.8rem;
+
+  color: #2f302f;
+  p{
+    margin: 0!important;
+  }
+ 
+}

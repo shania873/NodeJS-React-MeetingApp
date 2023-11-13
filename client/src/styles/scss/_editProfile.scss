@@ -1,0 +1,104 @@
+.addSoins-form {
+      /* border: 1px solid #e5e5e5; */
+    /* padding: 2rem; */
+    /* background-color: #f8f8f8; */
+    margin-top: 0.9rem;
+  h5{
+    font-size: 1rem;
+  }
+    label{
+      font-size: 0.9rem;
+    }
+}
+
+.row-indicateurs,
+.row-care,
+.row-activities {
+  border: 1px solid #0000002e;
+  padding: 1rem;
+}
+
+.noEditRepports-container {
+  h6 {
+    margin-top: 1rem;
+  }
+}
+
+.label-form-indicateurs {
+  margin-bottom: 0.1rem;
+}
+
+.indicateurs-container {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #ddd;
+
+  .indicateur {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  .indicateur-line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .edit-delete button {
+    margin-left: 0.5rem;
+  }
+
+  .indicateur-subline {
+    font-size: 14px;
+    /* padding-top: 1rem; */
+    /* border-top: 1px solid red; */
+    padding-bottom: 1rem;
+    p{
+      margin: 0;
+    }
+  }
+
+
+  .title-indicateur{
+    padding: 0.5rem;
+    background-color: #8cb30c;
+    color: white;
+    font-weight: bold; 
+    /* border-radius: 8px; */
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .soins,
+  .indicateurs {
+    margin-top: 0.5rem;
+  }
+}
+
+.row-btnRapport {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  flex-direction: row-reverse;
+  position: absolute;
+  right: 0;
+  padding: 17px 20px;
+
+  &:first-of-type {
+    top: 0;
+  }
+
+  &:last-of-type {
+    bottom: 0;
+  }
+
+  button {
+    margin-left: 0.5rem;
+    background: transparent;
+    color: inherit;
+  }
+}

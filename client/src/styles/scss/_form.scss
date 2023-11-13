@@ -1,0 +1,159 @@
+// select {
+//     font-family: "Roboto", sans-serif!important;
+//     outline: 0!important;
+//     background: #f2f2f2!important;
+//     width: 100%!important;
+//     border: 0!important;
+//     // margin: 0 0 1rem;
+//     padding: 1rem!important;
+//     box-sizing: border-box!important;
+//     font-size: 14px!important;
+//   }
+.container-sent {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.btn-metis,
+.btn-metis-red,
+.btn-metis-grey {
+  font-family: "Roboto", sans-serif !important;
+  // text-transform: uppercase!important;
+  outline: 0 !important;
+  background: #8cb30c !important;
+  // width: 100%;
+  border: 0 !important;
+  padding: 1rem !important;
+  min-width: 3rem;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  -webkit-transition: all 0.3 ease !important;
+  transition: all 0.3 ease !important;
+  cursor: pointer;
+  display: inline-block;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.btn-metis-red {
+  background: #f04029 !important;
+}
+
+.btn-metis-grey {
+  background: #f8f8f8 !important;
+  color: #212529 !important;
+}
+
+#inputValueSpécifique {
+  display: block !important;
+  width: 100% !important;
+}
+
+.react-bootstrap-table-pagination .dropdown-toggle {
+  padding: 4px 8px;
+}
+
+.form-check {
+  cursor: pointer;
+
+  label {
+    padding-left: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.form-check-inline input[type="radio"] + label {
+  display: inline;
+}
+
+// label{
+//   margin-right: 2rem;
+// }
+
+// .sous-form{
+//   margin: 0 3rem;
+//   background-color: #8cb30c;
+//   padding: 3rem;
+//   border-radius: 50px;
+//   color: white;
+
+//   input{
+//     margin-bottom: 2rem;
+//   }
+// }
+
+.container-password {
+  position: relative;
+
+  .eye-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 1.25rem;
+  }
+}
+
+input[type="password"] {
+  padding-right: 2rem;
+}
+
+input[type="password"].error {
+  border-color: red;
+}
+
+input[type="password"].error + .eye-icon {
+  color: red;
+}
+
+input[type="password"].error + .eye-icon:hover {
+  color: red;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+}
+
+input[type="text"].error + .eye-icon {
+  color: red;
+}
+
+input[type="text"].error + .eye-icon:hover {
+  color: red;
+}
+
+input[type="email"].error {
+  border-color: red;
+}
+
+input[type="email"].error + .eye-icon {
+  color: red;
+}
+
+input[type="email"].error + .eye-icon:hover {
+  color: red;
+}
+
+input[type="number"].error {
+  border-color: red;
+}
+
+input[type="number"].error + .eye-icon {
+  color: red;
+}
+
+input[type="number"].error + .eye-icon:hover {
+  color: red;
+}
