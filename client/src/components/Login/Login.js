@@ -2,7 +2,7 @@ import React from "react";
 import { useRef, useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 import Container from "react-bootstrap/Container";
 
@@ -46,7 +46,7 @@ const Login = () => {
         className=" column-title  d-flex justify-content-center align-items-center"
       >
         <h1>
-          Meeting App <FontAwesomeIcon icon={faDumbbell} />
+          Meeting App <FontAwesomeIcon icon={faHeart} />
         </h1>
       </Col>
 

@@ -20,14 +20,14 @@ const Menu = () => {
     <>
       <Navbar
         collapseOnSelect
-        style={{ backgroundColor: "#af3636" }}
+        style={{ backgroundColor: "#dc3545" }}
         expand="xl"
         className="mb-3 menu-metis"
         variant="dark"
       >
         <Container fluid>
           <Navbar.Brand href="/">
-            <span className="text-uppercase text-white">MeetingMap</span>
+            <span className="ext-white">Meeting App</span>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

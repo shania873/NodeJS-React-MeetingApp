@@ -19,31 +19,21 @@ const useAuth = (currentRoles) => {
 
     const authenticateUser = async () => {
       try {
-        const token = await fetch(
-          `${process.env.REACT_APP_API_URL}/admin/refreshToken`,
+        const token = await axios.get(
+          `${process.env.REACT_APP_API_URL}/refresh/refreshToken`,
           {
-            method: "POST",
-            credentials: "include",
-            // ... autres options
-          }
-        )
-          .then((response) => response.json())
-          .then((data) => console.log(data))
-          .catch((error) => console.error("Erreur:", error));
-
-        // await axios.post(
-        //   `${process.env.REACT_APP_API_URL}/admin/refreshToken`,
-        //   {
-        //     withCredentials: true,
-        //   }
-        // );
-
-        const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/getUser`,
-          {
-            headers: { Authorization: `Bearer ${token.data.token}` },
+            withCredentials: true,
           }
         );
+        console.log(token);
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/getUser`,
+          {
+            headers: { Authorization: `Bearer ${token.data.token}` },
+            withCredentials: true,
+          }
+        );
+
         // Guard if user is not authorized
 
         if (

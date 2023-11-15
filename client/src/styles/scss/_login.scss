@@ -11,12 +11,9 @@ h1 {
 }
 
 .column-title {
-  background-color: #2c2c2a;
+  background-color: #dc3545;
   color: white;
   font-weight: bold;
-}
-
-.column-title {
 }
 
 .persistCheck {
@@ -30,8 +27,7 @@ h1 {
   font-weight: bold;
   color: red;
 }
-// @import "../../../node_modules/bootstrap/scss/variables.scss";
-// @import "../../../node_modules/bootstrap/scss/mixins/breakpoints.scss";
+
 .form-login {
   max-width: 80%;
   width: 100%;

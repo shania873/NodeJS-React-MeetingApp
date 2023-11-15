@@ -1,5 +1,6 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../utils/database");
+const Medias = require("./medias");
 
 const User = sequelize.define("user", {
   email: {
@@ -50,9 +51,7 @@ const User = sequelize.define("user", {
     type: DataTypes.DATE,
     allowNull: false,
   },
-  // contacts: {
-  //   type: DataTypes.ARRAY(DataTypes.INTEGER), // Remplacez cela par le type correct selon votre structure
-  //   allowNull: true,
-  // },
 });
+
+User.belongsTo(Medias, { foreignKey: "mediasId" });
 module.exports = User;

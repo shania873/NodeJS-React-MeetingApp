@@ -1,14 +1,17 @@
 const express = require("express");
 require("dotenv").config();
+
 const http = require("http");
 const socketIO = require("socket.io");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
 const app = express();
 const server = http.createServer(app);
 const crypto = require("crypto");
 const cookieParser = require("cookie-parser");
+
+const verifyToken = require("./routes/refreshtoken");
+
 const secretKey = process.env.SECRET_KEY;
 
 const io = socketIO(server, {
@@ -20,7 +23,8 @@ const io = socketIO(server, {
   },
 });
 
-const routes = require("./routes/admin");
+const routesLogin = require("./routes/login");
+const routeUser = require("./routes/user");
 const sequelize = require("./utils/database");
 
 app.use(cors({ credentials: true, origin: "http://localhost:3001" }));
@@ -28,7 +32,10 @@ app.use(cookieParser(secretKey));
 
 app.use(bodyParser.json());
 
-app.use("/admin", routes);
+app.use("/admin", routesLogin);
+app.use("/refresh", verifyToken);
+app.use("/api", routeUser);
+
 const port = 3000;
 
 server.listen(port, () => {
