@@ -33,7 +33,7 @@ const Menu = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="/ListedeCours">Mes Cours</Nav.Link>
+              {/* <Nav.Link href="/ListedeCours">Mes Cours</Nav.Link> */}
 
               <Dropdown align={{ xxl: "end" }}>
                 <Dropdown.Toggle
